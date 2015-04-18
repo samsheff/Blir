@@ -1,0 +1,7 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/GA-iOS-SDK"
+LIBRARY_SEARCH_PATHS = '$(PODS_ROOT)/GA-iOS-SDK' "$(PODS_ROOT)/GA-iOS-SDK/Library/ios 1.0.2"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/GA-iOS-SDK"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"GameAnalytics_1.0.2" -l"Pods-Blrrd-GA-iOS-SDK" -l"z" -framework "CoreData" -framework "Foundation" -framework "Security" -framework "SystemConfiguration" -framework "UIKit" -weak_framework "AdSupport"
+OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+PODS_ROOT = ${SRCROOT}/Pods

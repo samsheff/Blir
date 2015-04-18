@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import <GA-iOS-SDK/GameAnalytics.h>
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [GameAnalytics setDebugLogLevelVerbose:TRUE];
+    [GameAnalytics initializeWithGameKey:@"f93c810a2f99918a93e3e2bea9d16532" secretKey:@"2167c5eacc5bdd6c2b5873396b1405d29842e460" build:@"1.1"];
     return YES;
 }
 

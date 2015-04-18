@@ -1,0 +1,1 @@
+../../../GA-iOS-SDK/Library/ios 1.0.2/GameAnalytics.h
